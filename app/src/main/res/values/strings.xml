@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">智能农业系统</string>
+    <string name="rw1">自动控制</string>
+    <string name="rw2">历史数据</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">设置</string>
+    <string name="title_dashboard_center">设置中心</string>
+    <string name="title_header">智能农业系统</string>
+
+    <string name="hand_fan_title">空调功率：</string>>
+    <string name="hand_fan_title1">风扇2：</string>>
+    <string name="hand_motor_title">空调状态：</string>
+    <string name="hand_alarm_title">声光报警器：</string>
+    <string name="hand_light_title">可调灯：</string>
+    <string name="hand_light_title1">风扇：</string>
+    <string name="home_tem_title">厢内温度：</string>
+    <string name="home_hum_title">湿度：</string>
+    <string name="home_illu_title">光照度：</string>
+
+    <string name="hand_fan_01_title">风扇1</string>
+    <string name="hand_fan_01_title1" >风扇2</string>
+    <string name="hand_light_01_title">可调灯</string>
+    <string name="hand_temp_01_title">温湿度传感器</string>
+    <string name="hand_motor_01_title">步进电机</string>
+    <string name="home_ie_title">光照度传感器光照度</string>
+    <string name="home_al_title">可调节灯传感器亮度</string>
+
+
+    <string name="try_again">获取传感器设备信息中...,稍后请重试!</string>
+    <string name="try_again1">无筛选</string>
+
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="stop">停止</string>
+    <string name="forward">正转</string>
+    <string name="reverse">反转</string>
+</resources>

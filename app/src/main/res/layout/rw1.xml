@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scrollbarSize="1dp"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VID:202103"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/PID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PID:"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/VStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VStatus"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="湿度阈值:"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"
+                />
+
+            <EditText
+                android:id="@+id/yu1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="18dp"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/colorBlackDeep"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="%"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="温差阈值:"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"
+                />
+
+            <EditText
+                android:id="@+id/yu"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textSize="18dp"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/colorBlackDeep"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="℃"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="温度(阀值1):"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <EditText
+                android:id="@+id/conn_et_temp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="18dp"
+                android:theme="@style/MyEditText"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="℃"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="温度(阀值2):"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <EditText
+                android:id="@+id/conn_et_temp1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="18dp"
+                android:theme="@style/MyEditText"
+                tools:ignore="DuplicateIds"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="℃"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+            <Button
+                android:id="@+id/wuduyuzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="发送"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="光照度最小值(LUX):"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <EditText
+                android:id="@+id/conn_et_temp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000200"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="18dp"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="LUX"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+            <Button
+                android:id="@+id/gzyuzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="发送"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/home_ie_title"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/home_tv_ie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:text="0LUX"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/tv_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/home_al_title"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:id="@+id/home_tv_al"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="0%"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/hand_temp_01_title"
+            android:textColor="@color/colorBlackDeep"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wudu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_tem_title"
+            android:textColor="@color/colorBlackDeep"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/wudu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="厢外温度："
+            android:textColor="@color/colorBlackDeep"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView14_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_hum_title"
+            android:textColor="@color/colorBlackDeep"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_fan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="风扇功率:"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <TextView
+                android:id="@+id/conn_tv_fan_status1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="空调状态:"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <TextView
+                android:id="@+id/conn_tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="空调功率:"
+                android:textSize="18dp"
+                android:textColor="@color/colorBlackDeep"/>
+
+            <TextView
+                android:id="@+id/conn_tv_status1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="自动控制："
+                android:textColor="@color/colorBlackDeep"
+                android:textSize="@dimen/textsize_18" />
+
+            <Switch
+                android:id="@+id/k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:thumb="@drawable/switch_ios_thumb"
+                android:track="@drawable/switch_ios_track_selector">
+            </Switch>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

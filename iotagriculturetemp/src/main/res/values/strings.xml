@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IOTAgricultureTemp</string>
+    <string name="app_ChineseName">智能农业系统</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
