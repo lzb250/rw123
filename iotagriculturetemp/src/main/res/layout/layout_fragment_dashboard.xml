@@ -1,15 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.FragmentDashboard">
+    tools:context=".Fragment.FragmentDashboard"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/fragmentTitle_dashboard"
         android:layout_width="match_parent"
-        android:layout_height="113dp"
-        android:text="dash"
-        android:textSize="50dp" />
+        android:layout_height="54dp"
+        android:background="@color/colorBlueShallow2"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="服务器IP:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/conn_et_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="192.168.38.50"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="端口号:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/conn_et_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8080"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_conn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorBlueShallow"
+        android:text="连接服务器"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器连接状态："
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/complete_right"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/wifi_false" />
+    </LinearLayout>
+</LinearLayout>
