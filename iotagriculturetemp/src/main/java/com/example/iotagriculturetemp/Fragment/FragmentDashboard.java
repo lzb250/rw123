@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.iotagriculturetemp.R;
 import com.example.iotagriculturetemp.model.ConnectServer;
@@ -30,20 +31,16 @@ public class FragmentDashboard extends Fragment implements View.OnClickListener{
 
     private EditText et_conn_ip;
     private EditText et_conn_port;
-
     private ImageView iv_WifiIsRun;
+    private TextView tv_message;
     private Button btn_conn;
     Handler mHandler = new Handler();
     Runnable r = new Runnable() {
         @Override
         public void run() {
             connectServer.resumeState(FragmentDashboard.this,iv_WifiIsRun);
-            if(!connectServer.isConnect())
-            {
-                connectSocket();
-            }
             //检查socket连接
-            mHandler.postDelayed(r, 50);
+            mHandler.postDelayed(r, 5000);
         }
     };
     @Override
@@ -66,8 +63,9 @@ public class FragmentDashboard extends Fragment implements View.OnClickListener{
         et_conn_port = view.findViewById(R.id.conn_et_port);
         btn_conn = view.findViewById(R.id.btn_conn);
         iv_WifiIsRun = view.findViewById(R.id.complete_right);
+        tv_message = view.findViewById(R.id.tv_message);
 
-        mHandler.postDelayed(r, 5);
+        mHandler.postDelayed(r, 5000);
 
         return view;
     }
@@ -118,9 +116,13 @@ public class FragmentDashboard extends Fragment implements View.OnClickListener{
         }
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onSensorEvent(String recvData){
-
+    public void onHomeCtrEvent(String recvData) {
+        handleSocketReciveData(recvData);
     }
+    private void handleSocketReciveData(String recvData) {
+        tv_message.setText(recvData);
+    }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();

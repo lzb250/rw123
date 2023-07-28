@@ -24,16 +24,12 @@ public class FragmentDataShow extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (!EventBus.getDefault().isRegistered(this)) {
-            EventBus.getDefault().register(this);
-        }
+        EventBus.getDefault().register(this);
     }
-
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onHomeCtrEvent(String recvData) {
         handleSocketReciveData(recvData);
     }
-
     private void handleSocketReciveData(String recvData) {
         tv_message.setText(recvData);
     }
@@ -50,5 +46,11 @@ public class FragmentDataShow extends Fragment {
     }
     public void initView(){
 
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 }

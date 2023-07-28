@@ -93,4 +93,11 @@
             android:layout_marginRight="10dp"
             android:src="@drawable/wifi_false" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:text="control"
+        android:textSize="20dp" />
 </LinearLayout>
