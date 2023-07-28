@@ -8,13 +8,9 @@ import android.view.ViewGroup;
 import com.example.iotagriculturetemp.R;
 
 public class FragmentControl extends Fragment {
-
-
-
     public FragmentControl() {
         // Required empty public constructor
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
