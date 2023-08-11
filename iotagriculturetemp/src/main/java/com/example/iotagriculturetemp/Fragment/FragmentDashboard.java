@@ -121,6 +121,7 @@ public class FragmentDashboard extends Fragment implements View.OnClickListener{
     }
     private void handleSocketReciveData(String recvData) {
         tv_message.setText(recvData);
+        connectServer.writeCmd(recvData);
     }
 
     @Override

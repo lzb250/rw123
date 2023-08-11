@@ -7,5 +7,9 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorPrimaryDark">#757575</color>
     <color name="colorBlueShallow2">#29899A</color>
+    <color name="gray_03">#646464</color>
+    <color name="btn_gray">#d5d9e0</color>
+    <color name="colorGreen_01"> #4EDA62</color>
+
 
 </resources>

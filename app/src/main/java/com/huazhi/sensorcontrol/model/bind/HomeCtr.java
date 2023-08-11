@@ -33,6 +33,7 @@ public class HomeCtr extends BaseObservable {
             if (can) {
                 //LogUtils.i("sendID type="+type);
                 EventBus.getDefault().post(this.command);//发送事件
+
             }
 
         } catch (Exception e) {

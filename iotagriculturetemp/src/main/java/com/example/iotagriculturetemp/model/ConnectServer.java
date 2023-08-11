@@ -175,7 +175,7 @@ public class ConnectServer {
             }
         });
     }
-    public void writeCmd(final String cmd){
+    public void writeCmd(String cmd){
         sendMsg(cmd);
     }
 //  检查ip地址正确
